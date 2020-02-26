@@ -1,8 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.sambarboza'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 28
@@ -12,7 +11,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "0.1.2"
+        versionName "$orbitview_version"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -31,8 +30,22 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+publish {
+
+    def groupProjectID = 'com.sambarboza'
+    def artifactProjectID = 'orbitview'
+    def publishVersionID = "$orbitview_version"
+
+    userOrg = 'sambarboza'
+    repoName = 'orbitview'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Android custom view to create easy orbiting animations'
+    website = 'https://github.com/sambarboza/orbitview'
+
 }
