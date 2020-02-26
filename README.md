@@ -21,7 +21,8 @@
 
 </com.sambarboza.orbitview.OrbitView>
 ```
-
+# Installing
+[Add it to your project using JitPack](https://jitpack.io/#sambarboza/orbitview/0.1.0)
 # Available Parameters
 #### For `OrbitView`
 - `orbitColor`: defines the color of the orbit (line)
