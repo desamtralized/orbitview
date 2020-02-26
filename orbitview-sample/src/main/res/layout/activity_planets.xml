@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:minWidth="456dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/starsbg" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sun" />
+
+    <com.sambarboza.orbitview.OrbitView
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_centerInParent="true"
+        app:orbitColor="@color/orbit_color"
+        app:orbitWidth="1dp">
+
+        <com.sambarboza.orbitview.PlanetView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            app:drawable="@drawable/mercury"
+            app:orbitDuration="1205"
+            app:repeatCount="-1" />
+
+    </com.sambarboza.orbitview.OrbitView>
+
+    <com.sambarboza.orbitview.OrbitView
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_centerInParent="true"
+        app:orbitColor="@color/orbit_color"
+        app:orbitWidth="1dp">
+
+        <com.sambarboza.orbitview.PlanetView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            app:drawable="@drawable/venus"
+            app:orbitDuration="3071"
+            app:repeatCount="-1" />
+
+    </com.sambarboza.orbitview.OrbitView>
+
+    <com.sambarboza.orbitview.OrbitView
+        android:layout_width="298dp"
+        android:layout_height="298dp"
+        android:layout_centerInParent="true"
+        app:orbitColor="@color/orbit_color"
+        app:orbitWidth="1dp">
+
+        <com.sambarboza.orbitview.PlanetView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:drawable="@drawable/earth"
+            app:orbitDuration="5000"
+            app:repeatCount="-1" />
+
+    </com.sambarboza.orbitview.OrbitView>
+
+    <com.sambarboza.orbitview.OrbitView
+        android:layout_width="456dp"
+        android:layout_height="456dp"
+        android:layout_centerInParent="true"
+        app:orbitColor="@color/orbit_color"
+        app:orbitWidth="1dp">
+
+        <com.sambarboza.orbitview.PlanetView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:drawable="@drawable/mars"
+            app:orbitDuration="9404"
+            app:repeatCount="-1" />
+
+    </com.sambarboza.orbitview.OrbitView>
+
+</RelativeLayout>
