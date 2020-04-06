@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.*
+import android.widget.FrameLayout
 
 /**
  * @author Samuel Barbosa
@@ -16,7 +17,7 @@ class PlanetView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : View(context, attrs, defStyleAttr) {
+) : FrameLayout(context, attrs, defStyleAttr) {
 
     private enum class Interpolator {
         LINEAR, ACCELERATE, ACCELERATE_DECELERATE, ANTICIPATE, ANTICIPATE_OVERSHOOT, BOUNCE,
