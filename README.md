@@ -1,4 +1,6 @@
-# OrbitView
+[ ![Download](https://api.bintray.com/packages/sambarboza/orbitview/orbitview/images/download.svg) ](https://bintray.com/sambarboza/orbitview/orbitview/_latestVersion)
+
+# OrbitView 
 ### Android custom View to create animated orbiting objects.
 ![Sample App](https://media.giphy.com/media/J4U60wsupnApKQYRvk/giphy.gif)
 
@@ -21,8 +23,7 @@
 
 </com.sambarboza.orbitview.OrbitView>
 ```
-# Installing
-[Add it to your project using JitPack](https://jitpack.io/#sambarboza/orbitview/0.1.0)
+
 # Available Parameters
 #### For `OrbitView`
 - `orbitColor`: defines the color of the orbit (line)
